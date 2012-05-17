@@ -1,0 +1,14 @@
+This script is a simple, naive, and rough mechanism to interact with the Knol Redirect API application: https://knol-redirects.appspot.com/_ah/api/redirects/v0.1/
+
+1. Get an OAuth2 key with the correct scope and user with correct permissions here (or extend this script using the Google library) 
+    1.1 https://code.google.com/oauthplayground/
+        1.1.1 Scope: https://www.googleapis.com/auth/knol
+    1.2 OR https://developers.google.com/accounts/docs/OAuth2#libraries
+2. Add the correct OAuth2 key to the script (hard-coded). 
+3. Store the data in a data.csv file with fields:
+    3.1 ID-prefix, ID-suffix, New URL
+
+4. Run with python, or make the script executable and run it that way.
+    4.1 $ python redirect.py
+    4.2 $ chmod +x redirect.py
+        $ ./redirect.py
